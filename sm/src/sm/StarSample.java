@@ -8,7 +8,7 @@ public class StarSample {
 		
 		for(int i=1; i<=9; i++) {
 			
-			if(i <= 5) {
+			if(i < 5) {
 				count++;
 			}else {
 				count--;
@@ -19,7 +19,7 @@ public class StarSample {
 			}
 			
 			for(int k=1; k<=2*count-1; k++) {
-				System.out.print("♪");
+				System.out.print("*");
 			}			
 			System.out.print("\n");
 		}		
