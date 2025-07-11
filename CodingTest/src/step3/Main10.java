@@ -7,16 +7,17 @@ public class Main10 {
 		Scanner sc = new Scanner(System.in);
 		
 		int N = sc.nextInt();
-		int star = 0;
-		
+
 		for(int i=1; i<=N; i++) {
-			star++;
-			for(int j=1; j<=star; j++) {
+			
+			for(int j=1; j<=N-i; j++) {
 				System.out.print(" ");
-			}
-			System.out.println("*");
-			// System.out.print("\n");
-		}
+			}	
+			for(int k=1; k<=i; k++) {
+				System.out.print("*");
+			}	
+		 	System.out.print("\n");
+		}	
 		sc.close();
 	}
 }
