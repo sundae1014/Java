@@ -7,20 +7,23 @@ public class Main10 {
 		Scanner sc = new Scanner(System.in);
 		
 		int N = sc.nextInt();
-		int[] arr = new int[N];
-		int max = Integer.MIN_VALUE;
+		double[] arr = new double[N];
+		double max = 0;
 		
-		for(int i=0; i<=N; i++) {
-			 arr[i] = sc.nextInt();
+		
+		for(int i=0; i<N; i++) {
+			 arr[i] = sc.nextDouble();
 			 
 			 if(arr[i] > max) {
-				 arr[i] = max;
+				 max = arr[i];		
+			 	}			 
 			 }
-			 if(arr[i] < max) {
-				 arr[i] = arr[i]/max*100;
-			 }
+		double total = 0;
+		for(int i=0; i<N; i++) {
+			arr[i] = arr[i]/max*100;
+			total += arr[i];
 		}
-		
-		
+		System.out.println(total/N);
+		sc.close();
 	}
 }
