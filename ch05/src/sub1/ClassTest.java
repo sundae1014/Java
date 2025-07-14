@@ -45,5 +45,48 @@ public class ClassTest {
 		avante.speedDown(20);
 		avante.show();
 		
+		/*
+		 *  은행계좌 객체 생성
+		 * 	은행명 : 국민은행(kb)
+		 *  계좌번호 : 101-11-1001
+		 *  입금주 : 김유신
+		 *  현재잔액 : 0
+		 */
+		// 객체 생성
+		Account kb = new Account();
+		
+		// 초기화
+		kb.bank = "국민은행";
+		kb.id = "101-11-1001";
+		kb.name = "김유신";
+		kb.balance = 0;
+		
+		// 객체 상호작용
+		kb.deposit(100000);
+		kb.withdarw(30000);
+		kb.show();
+		
+		/*
+		 *  은행계좌 객체 생성
+		 * 	은행명 : 우리은행(wr)
+		 *  계좌번호 : 101-21-1001
+		 *  입금주 : 김춘추
+		 *  초기잔액 : 10000
+		 *  출력잔액 : 25000
+		 */
+		
+		Account wr = null;
+		wr = new Account();
+		
+		wr.bank = "우리은행";
+		wr.id = "101-21-2001";
+		wr.name = "김춘추";
+		wr.balance = 10000;
+		
+		wr.deposit(1000000);
+		wr.withdarw(985000);
+		wr.show();
+		
+		
 	}
 }
