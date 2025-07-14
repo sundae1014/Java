@@ -6,26 +6,28 @@ public class Main08 {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 				
-		int[] a = new int[10];
-		int total = 10;
+		int[] arr = new int[10];
+		int count = 0;
 		
 		for(int i =0; i<10; i++) {
-			int[] arr = new int[10];
-			arr[i] = sc.nextInt();
-			
-			for(int j=i; j<10; j++) {
-				arr[i] = arr[i]%42;
-				// arr[i] = a[i];
-			}
-			
-			if(arr[i] == a[i]) {
-				total--;
-			}
-			//else {
-			//	total++;
-			//}
+			int num = sc.nextInt();
+			arr[i] = num%42;		
 		}
-		System.out.println(total);
+		
+		for(int i=0; i<10; i++) {
+			boolean a = false;
+			
+			for(int j=0; j<i; j++) {
+				if(arr[i] == arr[j]) {
+					a = true;
+					break;
+				}
+			}
+			if(!a) {
+				count++;
+			}
+		}
+		System.out.println(count);
 		sc.close();
 	}
 }
