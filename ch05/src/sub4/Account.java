@@ -3,10 +3,10 @@ package sub4;
 public class Account {
 	
 	// 속성
-	private String id;
-	private String bank;
-	private String name;
-	private int balance;	
+	protected String id;
+	protected String bank;
+	protected String name;
+	protected int balance;	
 	
 	public Account(String bank, String id, String name, int balance) {
 		this.id = id;

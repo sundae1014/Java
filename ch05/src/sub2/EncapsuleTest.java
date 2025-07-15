@@ -68,9 +68,9 @@ public class EncapsuleTest {
 		boolean isOk = book1.brrowBook();
 		
 		if(isOk){
-			System.out.println(book1.getTitle() + "도서 대출 성공!");
+			System.out.println(book1.getTitle() + " 도서 대출 성공!");
 		}else {
-			System.out.println(book1.getTitle() + "도서 대출 실패!");
+			System.out.println(book1.getTitle() + " 도서 대출 실패!");
 		}
 		
 		book1.show();
@@ -81,9 +81,9 @@ public class EncapsuleTest {
 		boolean isOk2 = book2.brrowBook();
 		
 		if(isOk2) {
-			System.out.println(book2.getTitle() + "도서 대출 성공!");
+			System.out.println(book2.getTitle() + " 도서 대출 성공!");
 		}else {
-			System.out.println(book2.getTitle() + "도서 대출 실패!");
+			System.out.println(book2.getTitle() + " 도서 대출 실패!");
 		}
 		
 		book2.show();

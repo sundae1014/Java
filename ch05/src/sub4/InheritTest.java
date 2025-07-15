@@ -21,6 +21,20 @@ public class InheritTest {
 		bongo.speedDown(20);
 		bongo.show();
 		
+		StockAccount KB = new StockAccount("KB증권", "101-22-0100", "홍길동", 10000, "삼성전자", 10, 100000);
+		KB.deposit(1000000);
+		KB.withdarw(50000);
+		KB.buy(5, 80000);
+		KB.show();
+		
+		KB.sell(5, 90000);
+		KB.show();
+		
+		Doctor doctor = new Doctor("김유신", 23, "소아과");
+		Engineer engineer = new Engineer("김춘추", 21, "소프트웨어");
+		
+		doctor.work();
+		engineer.work();
 		
 	}
 }
