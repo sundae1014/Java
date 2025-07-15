@@ -49,11 +49,5 @@ public class PolyTest {
 		arr[1].move();
 		arr[2].move();
 		
-		
-		
-		
-		
-		
-		
 	}
 }
