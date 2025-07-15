@@ -7,4 +7,8 @@ public class Shark extends Animal {
 		System.out.println("Shark swim...");
 	}
 	
+	@Override
+	public void hunt() {
+		System.out.println("Shark hunt...");
+	}
 }
