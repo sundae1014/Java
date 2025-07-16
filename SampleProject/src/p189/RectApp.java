@@ -21,6 +21,5 @@ public class RectApp {
 		System.out.println("사각형의 면적은 " + rect.getArea());
 		sc.close();
 	}
-
 }
 
