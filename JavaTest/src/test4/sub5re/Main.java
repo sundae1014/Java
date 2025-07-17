@@ -13,11 +13,11 @@ public class Main {
 		// Student s3 = new Student("구씨", "SS003");
 		// Student s4 = new Student("황씨", "SS004");
 		
-		// 김씨 수강신청
+		// 김유신 수강신청
 		s1.entollSubject(java);
 		s1.entollSubject(database);
 		System.out.println("-------------------------");
-		// 정씨 수강신청
+		// 김유신 수강신청
 		s2.entollSubject(java);
 		s2.entollSubject(database);
 		System.out.println("-------------------------");
@@ -42,6 +42,10 @@ public class Main {
 		
 		// 김유신 정보 출력
 		s1.printStudentInfo();
+		System.out.println("-------------------------");
+		
+		// 김춘추 정보 출력
+		s2.printStudentInfo();
 		System.out.println("-------------------------");
 	}
 }

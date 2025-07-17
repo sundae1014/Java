@@ -24,8 +24,13 @@ public class Student {
 	}
 	
 	public void setScore(Subject a, int score) {
-		scores[subjectCount] = score;
-		System.out.println(name+" - "+a.getSubName()+" 점수 입력완료");
+		for(int i =0; i<subjectCount; i++) { // for문 사용 안할경우 Count 2번 증가함
+			if(subjects[i] == a) {				
+				scores[i] = score;
+				System.out.println(name+" - "+a.getSubName()+" 점수 입력완료");
+				// return; 굳이 필요없음 / if문에서는 왠만하면 쓰는게 좋다고함
+			}
+		}
 	}
 	
 	public void printStudentInfo() {
@@ -33,7 +38,7 @@ public class Student {
 		System.out.println("아이디 : "+this.studentId);
 		System.out.println("성적");
 		for(int i=0; i<subjectCount; i++) {
-			System.out.println(" - "+subjects[i]+":"+scores[i]);
+			System.out.println(" - "+subjects[i].getSubName()+":"+scores[i]);
 		}
 	}
 	

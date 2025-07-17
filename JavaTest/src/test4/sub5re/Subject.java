@@ -19,8 +19,8 @@ public class Subject {
 	public void printSubjectInfo() {
 		System.out.println("과목명 : "+this.subName);
 		System.out.print("수강생 : ");
-		for(int i=0; i<studentCount; i++) {
-			System.out.print(students[i].getName()+", ");
+		for(int i=0; i<studentCount; i++) {							
+			System.out.print(students[i].getName()+", ");			
 		}
 		System.out.println();
 	}
