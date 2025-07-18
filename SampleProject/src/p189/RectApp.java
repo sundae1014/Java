@@ -2,10 +2,10 @@ package p189;
 
 import java.util.Scanner;
 
-class Rectangle {
-	
+class Rectangle {	
 	int width;
 	int height;
+	
 	public int getArea() {
 		return width*height;
 	}
