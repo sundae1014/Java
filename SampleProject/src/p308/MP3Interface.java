@@ -1,5 +1,6 @@
 package p308;
 
-public interface MP3Interface {
-
+interface MP3Interface {
+	public void play();
+	public void stop();
 }

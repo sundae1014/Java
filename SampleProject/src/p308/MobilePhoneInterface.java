@@ -1,5 +1,7 @@
 package p308;
 
-public interface MobilePhoneInterface extends PhoneInterface {
+interface MobilePhoneInterface extends PhoneInterface {
 
+	void sendSMS();
+	void receiveSMS();
 }
