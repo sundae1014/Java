@@ -7,15 +7,22 @@ public class Main05 {
 		Scanner sc = new Scanner(System.in);
 		
 		int N = sc.nextInt();
-		int[] bs = new int[N];
 		int M = sc.nextInt();
+		int[] basket = new int[N+1];
 		
-		for(int a=0; a<M*3; a++) {
-			bs[a] = sc.nextInt();
+		for(int a=0; a<M; a++) {
+			int i = sc.nextInt();
+			int j = sc.nextInt();
+			int k = sc.nextInt();
 			
-		}
+			for(int b=i; b<=j; b++) {
+				basket[b] = k;
+			}
+		}	
 		
-		System.out.println(bs[5]);
+		for(int i=1; i<=N; i++) {
+			System.out.print(basket[i] + " ");
+		}
 		sc.close();
 	}
 }
