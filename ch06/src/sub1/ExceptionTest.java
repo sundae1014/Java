@@ -81,7 +81,7 @@ public class ExceptionTest {
 			e.printStackTrace();
 		} catch (SecurityException e) {
 			e.printStackTrace();
-		} catch (InstantiationException e) {
+		} catch (InstantiationException e) { // Exception 으로 통합 가능
 			e.printStackTrace();
 		} catch (IllegalAccessException e) {
 			e.printStackTrace();
@@ -90,14 +90,6 @@ public class ExceptionTest {
 		} catch (InvocationTargetException e) {
 			e.printStackTrace();
 		}
-		
-		
-		
-		
-		
-		
-		
-		
 		
 		System.out.println("프로그램 정상 종료...");
 	}
