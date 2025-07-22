@@ -15,7 +15,7 @@ public class ListTest {
 	public static void main(String[] args) {
 		
 		// ArrayLis 기본
-		List<Integer> list = new ArrayList();
+		List<Integer> list = new ArrayList<Integer>();
 		
 		// 데이터 삽입
 		list.add(1);
