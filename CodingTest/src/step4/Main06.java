@@ -10,19 +10,22 @@ public class Main06 {
 		int M = sc.nextInt();
 		int[] basket = new int[N+1];
 		
+		for(int k=1; k<=N; k++) {
+			basket[k] = k;
+		}
+				
 		for(int a=0; a<M; a++) {
 			int i = sc.nextInt();
 			int j = sc.nextInt();
 			
-			for(int b=i; b<=2; b++) {
-				basket [i] = basket[j];
-			}
+			int temp = basket[i];
+			basket[i] = basket[j];
+			basket[j] = temp;
 		}
 		
-		for(int i=1; i<=M; i++) {
-			System.out.print(basket[i]);
-		}
-		
+		for(int i=1; i<=N; i++) {
+			System.out.print(basket[i]+" ");
+		}		
 		sc.close();
 	}
 }
