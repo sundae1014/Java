@@ -15,7 +15,7 @@ class Orange{
 		this.price = price;
 	}
 
-	public static void show() {
+	public void show() {
 		System.out.println("원산지 : " + country + ", 가격 : " + price);
 	}
 }
@@ -34,13 +34,16 @@ public class Test09 {
 		list3.add(new Orange("밀양", 3000));
 		list3.add(new Orange("함안", 3000));
 		
-		Map<String, Orange> map = new HashMap<>();
+		Map<String, List<Orange>> map = new HashMap<>();
 		map.put("gyeonggi", list1);
 		map.put("chungbuk", list2);
 		map.put("gyungnam", list3);
 		
-		List<Orange> list = map.;
-		Orange orange = list.;
+		List<Orange> list = map.get("gyeonggi");
+		Orange orange = list.get(1);
+		orange.show();
 		
+		map.get("chungbuk").get(1).show();
+		map.get("gyungnam").get(0).show();
 	}
 }
