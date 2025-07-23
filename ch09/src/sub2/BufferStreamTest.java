@@ -1,5 +1,7 @@
 package sub2;
 
+import java.io.BufferedInputStream;
+import java.io.BufferedOutputStream;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
@@ -17,17 +19,19 @@ public class BufferStreamTest {
 		String target = "C:\\Users\\GGG\\Desktop\\Person2.tif";
 		
 		try {
-			// 바이트 스트림 생성(파일 연결)
+			// 기본 스트림 생성(파일 연결)
 			FileInputStream fis = new FileInputStream(source);
 			FileOutputStream fos = new FileOutputStream(target);
 			
-			
-			
+			// 보조 스트림(Buffer) 생성
+			BufferedInputStream bis = new BufferedInputStream(fis);
+			BufferedOutputStream bos = new BufferedOutputStream(fos);
+
 			// 무한반복으로 스트림 작업 수행
 			while(true) {
 				
 				// 파일 읽기
-				int data = fis.read();
+				int data = bis.read();
 
 				if(data == -1) {
 					// 파일 내용이 없으면
@@ -35,13 +39,14 @@ public class BufferStreamTest {
 				}
 
 				 // 파일 쓰기
-				 fos.write(data);				
+				 bos.write(data);				
 			}
 			
 			// 스트림 작업 종료
+			bis.close();
+			bos.close();
 			fis.close();
 			fos.close();
-	
 			
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
