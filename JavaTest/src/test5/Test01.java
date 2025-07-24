@@ -10,8 +10,7 @@ public class Test01 {
 		int input = 0;
 		int count = 0;
 		
-		do {
-			
+		do {			
 			count++;
 			System.out.println("------------------------");
 			System.out.print("1 ~ 10 사이 값 입력 : ");
