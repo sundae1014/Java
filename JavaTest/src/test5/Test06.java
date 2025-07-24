@@ -30,7 +30,7 @@ public class Test06 {
 	}
 	
 	public static List<Integer> createList(){
-		List<Integer> scoreList = new ArrayList<Integer>();
+		List<Integer> scoreList = new ArrayList<>();
 		Random rand = new Random();
 		
 		for(int i=1; i<=10; i++) {

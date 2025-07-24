@@ -17,10 +17,10 @@ public class Test07 {
 		Set<Integer> lottoSet = new HashSet<Integer>();
 		
 		for(;;) {
-			int num = (int) Math.ceil((Math.random()*45)+1);
+			int num = (int) Math.ceil(Math.random()*46);
 			lottoSet.add(num);
 			
-			if(lottoSet.size() == 5) {
+			if(lottoSet.size() == 6) {
 				break;
 			}
 		}

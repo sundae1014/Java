@@ -7,12 +7,14 @@ class Member{
 	String id;
 	String name;
 	int age;
+	
 	public Member(String id, String name, int age) {
 		super();
 		this.id = id;
 		this.name = name;
 		this.age = age;
 	}
+	
 	@Override
 	public String toString() {
 		return (id+", "+name+", "+age);

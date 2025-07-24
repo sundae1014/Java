@@ -19,7 +19,7 @@ public class Test10 {
 				
 				for(int y=1; y<=9; y++) {
 					int z = x*y;
-					fw.write(x+" x "+y+" = "+z+"\n");
+					fw.write(x + " x " + y + " = " + z + "\n");
 				}
 			}
 			fw.close();
