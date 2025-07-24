@@ -19,7 +19,7 @@ class SubThread extends Thread{
 				System.out.println("SubThread : " + i);
 				i++;
 				
-				Thread.sleep(1000);				
+				Thread.sleep(1000);	// 1초 일시정지		
 			}
 			
 		}catch (InterruptedException e) {
@@ -38,14 +38,14 @@ public class ThreadInterruptTest {
 		sub.start();
 		
 		try {
-			// 메인스레드 10초 대기
+			// 메인스레드 5초 일시정지
 			Thread.sleep(1000 * 5);
 		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}
 		
 		// 작업스레드 일시정지 발생시키기
-		sub.interrupt();
+		 sub.interrupt();
 		
 		System.out.println("프로그램 종료...");		
 	}
