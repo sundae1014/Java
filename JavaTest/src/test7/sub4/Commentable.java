@@ -1,5 +1,9 @@
 package test7.sub4;
 
-public interface Commentable {
+import java.util.List;
 
+public interface Commentable {
+	public void addComment();
+	
+	public List<Comment> getComments();
 }
