@@ -1,6 +1,6 @@
 package test7.sub4;
 
-public abstract class Comment implements Commentable{
+public class Comment {
 	protected int no;
 	protected String content;
 	
